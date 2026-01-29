@@ -1,192 +1,508 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday Anny!</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body class="page">
-  <div class="fireworks-bg"></div>
-<header class="header container">
-  <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="300" height="450" viewBox="0 0 300 450" fill="none">
-  <path d="M130 360 Q 150 420 170 440" stroke="#5D4037" stroke-width="2"/>
-  <path d="M150 360 Q 150 420 155 435" stroke="#5D4037" stroke-width="2"/>
-  <path d="M170 360 Q 150 420 140 440" stroke="#5D4037" stroke-width="2"/>
-  
-  <path d="M100 245 Q 130 300 130 360" stroke="#5D4037" stroke-width="2"/>
-  <path d="M200 245 Q 170 300 170 360" stroke="#5D4037" stroke-width="2"/>
-  <path d="M150 150 Q 150 250 150 360" stroke="#5D4037" stroke-width="2"/>
+  <head>
+    <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Nunito:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+   <title>Happy Birthday Anny!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page">
+    <div class="fireworks-bg"></div>
+    <dialog class="birthday-modal" id="startModal">
+    <div class="birthday-modal__content">
+        <button class="birthday-modal__close" id="closeModalBtn" aria-label="Закрыть">&times;</button>
+        <div class="birthday-modal__image-wrapper">
+            <img src="./cake.jpg" alt="С Днем Рождения!" class="birthday-modal__img">
+        </div>
+        <h2 class="birthday-modal__title">С Днём Рождения, Анютка!</h2>
+        <p class="birthday-modal__text">Я приготовила для тебя кое-что особенное. Нажми на крестик, чтобы начать путешествие по твоей личной страничке!</p>
+    </div>
+</dialog>
+    <header class="header container">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="icon"
+        width="300"
+        height="450"
+        viewBox="0 0 300 450"
+        fill="none"
+      >
+        <path
+          d="M130 360 Q 150 420 170 440"
+          stroke="#5D4037"
+          stroke-width="2"
+        />
+        <path
+          d="M150 360 Q 150 420 155 435"
+          stroke="#5D4037"
+          stroke-width="2"
+        />
+        <path
+          d="M170 360 Q 150 420 140 440"
+          stroke="#5D4037"
+          stroke-width="2"
+        />
 
-  <g transform="translate(100, 210) rotate(-15)">
-    <ellipse cx="0" cy="0" rx="50" ry="65" fill="#A855F7" stroke="black" stroke-width="2"/>
-    <ellipse cx="-20" cy="-30" rx="10" ry="20" fill="white" opacity="0.5" transform="rotate(15)"/>
-  </g>
+        <path
+          d="M100 245 Q 130 300 130 360"
+          stroke="#5D4037"
+          stroke-width="2"
+        />
+        <path
+          d="M200 245 Q 170 300 170 360"
+          stroke="#5D4037"
+          stroke-width="2"
+        />
+        <path
+          d="M150 150 Q 150 250 150 360"
+          stroke="#5D4037"
+          stroke-width="2"
+        />
 
-  <g transform="translate(200, 180) rotate(15)">
-    <ellipse cx="0" cy="0" rx="55" ry="70" fill="#FF3D71" stroke="black" stroke-width="2"/>
-    <ellipse cx="-20" cy="-35" rx="12" ry="22" fill="white" opacity="0.5" transform="rotate(-10)"/>
-  </g>
+        <g transform="translate(100, 210) rotate(-15)">
+          <ellipse
+            cx="0"
+            cy="0"
+            rx="50"
+            ry="65"
+            fill="#A855F7"
+            stroke="black"
+            stroke-width="2"
+          />
+          <ellipse
+            cx="-20"
+            cy="-30"
+            rx="10"
+            ry="20"
+            fill="white"
+            opacity="0.5"
+            transform="rotate(15)"
+          />
+        </g>
 
-  <g transform="translate(140, 90)">
-    <ellipse cx="0" cy="0" rx="50" ry="65" fill="#26C6DA" stroke="black" stroke-width="2"/>
-    <ellipse cx="-20" cy="-30" rx="10" ry="20" fill="white" opacity="0.5"/>
-  </g>
-  
-  <g transform="translate(150, 360)">
-    <path d="M0 0 L -15 -10 L -15 10 Z" fill="#A855F7" stroke="black" stroke-width="2"/>
-    <path d="M0 0 L 15 -10 L 15 10 Z" fill="#A855F7" stroke="black" stroke-width="2"/>
-    <circle cx="0" cy="0" r="5" fill="#A855F7" stroke="black" stroke-width="2"/>
-  </g>
-</svg>
-  <h1 class="header__title">Happy Birthday Anny!<br>31.01.2004</h1>
-<svg xmlns="http://www.w3.org/2000/svg" class="icon_2" width="300" height="450" viewBox="0 0 300 450" fill="none">
-  <path d="M130 360 Q 150 420 170 440" stroke="#5D4037" stroke-width="2"/>
-  <path d="M150 360 Q 150 420 155 435" stroke="#5D4037" stroke-width="2"/>
-  <path d="M170 360 Q 150 420 140 440" stroke="#5D4037" stroke-width="2"/>
-  
-  <path d="M100 245 Q 130 300 130 360" stroke="#5D4037" stroke-width="2"/>
-  <path d="M200 245 Q 170 300 170 360" stroke="#5D4037" stroke-width="2"/>
-  <path d="M150 150 Q 150 250 150 360" stroke="#5D4037" stroke-width="2"/>
+        <g transform="translate(200, 180) rotate(15)">
+          <ellipse
+            cx="0"
+            cy="0"
+            rx="55"
+            ry="70"
+            fill="#FF3D71"
+            stroke="black"
+            stroke-width="2"
+          />
+          <ellipse
+            cx="-20"
+            cy="-35"
+            rx="12"
+            ry="22"
+            fill="white"
+            opacity="0.5"
+            transform="rotate(-10)"
+          />
+        </g>
 
-  <g transform="translate(100, 210) rotate(-15)">
-    <ellipse cx="0" cy="0" rx="50" ry="65" fill="#A855F7" stroke="black" stroke-width="2"/>
-    <ellipse cx="-20" cy="-30" rx="10" ry="20" fill="white" opacity="0.5" transform="rotate(15)"/>
-  </g>
+        <g transform="translate(140, 90)">
+          <ellipse
+            cx="0"
+            cy="0"
+            rx="50"
+            ry="65"
+            fill="#26C6DA"
+            stroke="black"
+            stroke-width="2"
+          />
+          <ellipse
+            cx="-20"
+            cy="-30"
+            rx="10"
+            ry="20"
+            fill="white"
+            opacity="0.5"
+          />
+        </g>
 
-  <g transform="translate(200, 180) rotate(15)">
-    <ellipse cx="0" cy="0" rx="55" ry="70" fill="#FF3D71" stroke="black" stroke-width="2"/>
-    <ellipse cx="-20" cy="-35" rx="12" ry="22" fill="white" opacity="0.5" transform="rotate(-10)"/>
-  </g>
+        <g transform="translate(150, 360)">
+          <path
+            d="M0 0 L -15 -10 L -15 10 Z"
+            fill="#A855F7"
+            stroke="black"
+            stroke-width="2"
+          />
+          <path
+            d="M0 0 L 15 -10 L 15 10 Z"
+            fill="#A855F7"
+            stroke="black"
+            stroke-width="2"
+          />
+          <circle
+            cx="0"
+            cy="0"
+            r="5"
+            fill="#A855F7"
+            stroke="black"
+            stroke-width="2"
+          />
+        </g>
+      </svg>
+      <h1 class="header__title">С Днём Рождения, Анютка!<br />31 января 2004</h1>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="icon_2"
+        width="300"
+        height="450"
+        viewBox="0 0 300 450"
+        fill="none"
+      >
+        <path
+          d="M130 360 Q 150 420 170 440"
+          stroke="#5D4037"
+          stroke-width="2"
+        />
+        <path
+          d="M150 360 Q 150 420 155 435"
+          stroke="#5D4037"
+          stroke-width="2"
+        />
+        <path
+          d="M170 360 Q 150 420 140 440"
+          stroke="#5D4037"
+          stroke-width="2"
+        />
 
-  <g transform="translate(140, 90)">
-    <ellipse cx="0" cy="0" rx="50" ry="65" fill="#26C6DA" stroke="black" stroke-width="2"/>
-    <ellipse cx="-20" cy="-30" rx="10" ry="20" fill="white" opacity="0.5"/>
-  </g>
-  
-  <g transform="translate(150, 360)">
-    <path d="M0 0 L -15 -10 L -15 10 Z" fill="#A855F7" stroke="black" stroke-width="2"/>
-    <path d="M0 0 L 15 -10 L 15 10 Z" fill="#A855F7" stroke="black" stroke-width="2"/>
-    <circle cx="0" cy="0" r="5" fill="#A855F7" stroke="black" stroke-width="2"/>
-  </g>
-</svg>
-</header>
+        <path
+          d="M100 245 Q 130 300 130 360"
+          stroke="#5D4037"
+          stroke-width="2"
+        />
+        <path
+          d="M200 245 Q 170 300 170 360"
+          stroke="#5D4037"
+          stroke-width="2"
+        />
+        <path
+          d="M150 150 Q 150 250 150 360"
+          stroke="#5D4037"
+          stroke-width="2"
+        />
+
+        <g transform="translate(100, 210) rotate(-15)">
+          <ellipse
+            cx="0"
+            cy="0"
+            rx="50"
+            ry="65"
+            fill="#A855F7"
+            stroke="black"
+            stroke-width="2"
+          />
+          <ellipse
+            cx="-20"
+            cy="-30"
+            rx="10"
+            ry="20"
+            fill="white"
+            opacity="0.5"
+            transform="rotate(15)"
+          />
+        </g>
+
+        <g transform="translate(200, 180) rotate(15)">
+          <ellipse
+            cx="0"
+            cy="0"
+            rx="55"
+            ry="70"
+            fill="#FF3D71"
+            stroke="black"
+            stroke-width="2"
+          />
+          <ellipse
+            cx="-20"
+            cy="-35"
+            rx="12"
+            ry="22"
+            fill="white"
+            opacity="0.5"
+            transform="rotate(-10)"
+          />
+        </g>
+
+        <g transform="translate(140, 90)">
+          <ellipse
+            cx="0"
+            cy="0"
+            rx="50"
+            ry="65"
+            fill="#26C6DA"
+            stroke="black"
+            stroke-width="2"
+          />
+          <ellipse
+            cx="-20"
+            cy="-30"
+            rx="10"
+            ry="20"
+            fill="white"
+            opacity="0.5"
+          />
+        </g>
+
+        <g transform="translate(150, 360)">
+          <path
+            d="M0 0 L -15 -10 L -15 10 Z"
+            fill="#A855F7"
+            stroke="black"
+            stroke-width="2"
+          />
+          <path
+            d="M0 0 L 15 -10 L 15 10 Z"
+            fill="#A855F7"
+            stroke="black"
+            stroke-width="2"
+          />
+          <circle
+            cx="0"
+            cy="0"
+            r="5"
+            fill="#A855F7"
+            stroke="black"
+            stroke-width="2"
+          />
+        </g>
+      </svg>
+    </header>
     <main class="main">
- <section class="hero container">
-  
-  <div class="hero_text">
-    <h2 class="hero__title title"><span class="stars">✨</span> Сегодня День Рождения у самой очаровательной девочки - Анютки! В честь этого - пара фактов об этой красотке! <span class="stars">✨</span></h2>
-  </div>
-  <div class="hero__image">
-    <img class="hero__photo" src="./photo_6.jpg" loading="lazy" alt="Анютка с шариками">
-  </div>
-   </section>
+      <section class="hero container">
+        <div class="hero_text">
+          <h2 class="hero__title title">
+            <span class="stars">✨</span> Сегодня День Рождения у самой
+            очаровательной девочки - Анютки! В честь этого - пара фактов об этой
+            красотке! <span class="stars">✨</span>
+          </h2>
+        </div>
+        <div class="hero__image">
+          <img
+            class="hero__photo"
+            src="./photo_6.jpg"
+            loading="lazy"
+            alt="Анютка с шариками"
+          />
+        </div>
+      </section>
 
-   <section class="about container">
-    <h2 class="about__title"><span class="stars">✨</span>Вся правда об Ане<span class="stars">✨</span></h2>
-    
-    <div class="about__container">
-        <article class="about__card about__card--accent-purple">
+      <section class="about container">
+        <h2 class="about__title">
+          <span class="stars">✨</span>Вся правда об Ане<span class="stars"
+            >✨</span
+          >
+        </h2>
+
+        <div class="about__container">
+          <article class="about__card about__card--accent-purple">
             <h3 class="about__card-title">Что в тебе классного:</h3>
             <ul class="about__list">
-                <li class="about__item">Ты очень смелая</li>
-                <li class="about__item">Ты уверенная в себе и целеустремленная</li>
-                <li class="about__item">Классно водишь машину</li>
-                <li class="about__item">У тебя отличное чувство юмора и доброе сердце</li>
-                <li class="about__item">Делаешь крутые дизайны и избегаешь дедлайнов</li>
+              <li class="about__item">Ты очень смелая</li>
+              <li class="about__item">
+                Ты уверенная в себе и целеустремленная
+              </li>
+              <li class="about__item">Классно водишь машину</li>
+              <li class="about__item">
+                У тебя отличное чувство юмора и доброе сердце
+              </li>
+              <li class="about__item">
+                Делаешь крутые дизайны и избегаешь дедлайнов
+              </li>
             </ul>
-        </article>
+          </article>
 
-        <article class="about__card about__card--accent-pink">
+          <article class="about__card about__card--accent-pink">
             <h3 class="about__card-title">Что я в тебе ценю:</h3>
             <ul class="about__list">
-                <li class="about__item">Твою доброту и искренность</li>
-                <li class="about__item">Твое чувство юмора (я начинаю повторяться =))</li>
-                <li class="about__item">Твою смелость и умение отстаивать свои границы</li>
-                <li class="about__item">Твою силу воли и упорность</li>
-                <li class="about__item">То, что ты моя маленькая СЕСТРЕНКА</li>
+              <li class="about__item">Твою доброту и искренность</li>
+              <li class="about__item">
+                Твое чувство юмора (я начинаю повторяться =))
+              </li>
+              <li class="about__item">
+                Твою смелость и умение отстаивать свои границы
+              </li>
+              <li class="about__item">Твою силу воли и упорность</li>
+              <li class="about__item">То, что ты моя маленькая СЕСТРЕНКА</li>
             </ul>
-        </article>
+          </article>
 
-        <article class="about__card about__card--accent-blue">
+          <article class="about__card about__card--accent-blue">
             <h3 class="about__card-title">Какая ты на самом деле:</h3>
             <ul class="about__list">
-                <li class="about__item">Мало кто знает, но ты очень чувствительная и ранимая</li>
-                <li class="about__item">Ты прекрасный друг (иногда даже слишком)</li>
-                <li class="about__item">Под видом сильного человека, у тебя в душе живет тревожный маленький котенок</li>
-                <li class="about__item">Ты преданная своим убеждениям</li>
-                <li class="about__item">Ты прекрасная сестренка, самая лучшая на свете!</li>
+              <li class="about__item">
+                Мало кто знает, но ты очень чувствительная и ранимая
+              </li>
+              <li class="about__item">
+                Ты прекрасный друг (иногда даже слишком)
+              </li>
+              <li class="about__item">
+                Под видом сильного человека, у тебя в душе живет тревожный
+                маленький котенок
+              </li>
+              <li class="about__item">Ты преданная своим убеждениям</li>
+              <li class="about__item">
+                Ты прекрасная сестренка, самая лучшая на свете!
+              </li>
             </ul>
-        </article>
+          </article>
 
-        <article class="about__card about__card--accent-orange">
+          <article class="about__card about__card--accent-orange">
             <h3 class="about__card-title">Миленькие факты об ИМЕННИНИЦЕ:</h3>
             <ul class="about__list">
-                <li class="about__item">В детстве любила НАКОЛДОБАНИТЬ в тарелке еду, а потом всех ей кормила</li>
-                <li class="about__item">Научилась плавать, упав в соседский бассейн</li>
-                <li class="about__item">"Обожала" детский сад в детстве и не хотела оттуда уходить =)</li>
-                <li class="about__item">По мнению одной тетки, подкатывала к ее мужу в 5-ом классе (даже не зная этого мужика =))</li>
-                <li class="about__item">Самая надежная в мире девочка! Люблю тебя!</li>
+              <li class="about__item">
+                В детстве любила НАКОЛДОБАНИТЬ в тарелке еду, а потом всех ей
+                кормила
+              </li>
+              <li class="about__item">
+                Научилась плавать, упав в соседский бассейн
+              </li>
+              <li class="about__item">
+                "Обожала" детский сад в детстве и не хотела оттуда уходить =)
+              </li>
+              <li class="about__item">
+                По мнению одной тетки, подкатывала к ее мужу в 5-ом классе (даже
+                не зная этого мужика =))
+              </li>
+              <li class="about__item">
+                Самая надежная в мире девочка! Люблю тебя!
+              </li>
             </ul>
-        </article>
-    </div>
-</section>
-
-   <section class="gallery container">
-    <h2 class="gallery__title"><span class="stars">✨</span>Минутка воспоминаний</h2>
-    <div class="gallery__viewport">
-        <div class="gallery__track">
-            <div class="gallery__item"><img src="photo_8.jpg" loading="lazy" alt="Фото 1" class="gallery__image"></div>
-            <div class="gallery__item"><img src="photo_1.jpg" loading="lazy" alt="Фото 2" class="gallery__image"></div>
-            <div class="gallery__item"><img src="photo_7.jpg" loading="lazy" alt="Фото 3" class="gallery__image"></div>
-            <div class="gallery__item"><img src="photo_10.jpg" loading="lazy" alt="Фото 4" class="gallery__image"></div>
-            
-            <div class="gallery__item"><img src="photo_11.jpg" loading="lazy" alt="Фото 5" class="gallery__image"></div>
-            <div class="gallery__item"><img src="photo_9.jpg" loading="lazy" alt="Фото 6" class="gallery__image"></div>
-            <div class="gallery__item"><img src="photo_2.jpg" loading="lazy" alt="Фото 7" class="gallery__image"></div>
-            <div class="gallery__item"><img src="photo_3.jpg" loading="lazy" alt="Фото 8" class="gallery__image"></div>
+          </article>
         </div>
-    </div>
-</section>
+      </section>
 
-   <section class="reviews">
-    <h2 class="reviews__title"><span class="stars">✨</span>Что говорят эксперты<span class="stars">✨</span></h2>
-    
-    <div class="reviews__container">
-        <article class="reviews__card">
-            <div class="reviews__header">
-                <div class="reviews__avatar reviews__avatar--nasty">Н</div>
-                <h4 class="reviews__author">Настя</h4>
+      <section class="gallery container">
+        <h2 class="gallery__title">
+          <span class="stars">✨</span>Минутка воспоминаний
+        </h2>
+        <div class="gallery__viewport">
+          <div class="gallery__track">
+            <div class="gallery__item">
+              <img
+                src="photo_8.jpg"
+                loading="lazy"
+                alt="Фото 1"
+                class="gallery__image"
+              />
             </div>
-            <p class="reviews__text">Я с удовольствием кушала йогурты от Ани, они были очень вкусные и натуральные. Аня, красотка! Никогда не опускай руки!</p>
-        </article>
+            <div class="gallery__item">
+              <img
+                src="photo_1.jpg"
+                loading="lazy"
+                alt="Фото 2"
+                class="gallery__image"
+              />
+            </div>
+            <div class="gallery__item">
+              <img
+                src="photo_7.jpg"
+                loading="lazy"
+                alt="Фото 3"
+                class="gallery__image"
+              />
+            </div>
+            <div class="gallery__item">
+              <img
+                src="photo_10.jpg"
+                loading="lazy"
+                alt="Фото 4"
+                class="gallery__image"
+              />
+            </div>
 
-        <article class="reviews__card">
-            <div class="reviews__header">
-                <div class="reviews__avatar reviews__avatar--mahmud">М</div>
-                <h4 class="reviews__author">Махмуд</h4>
+            <div class="gallery__item">
+              <img
+                src="photo_11.jpg"
+                loading="lazy"
+                alt="Фото 5"
+                class="gallery__image"
+              />
             </div>
-            <p class="reviews__text">Крутая спортсменка! Я увидел ее в спортзале и она вдохновила меня брать более тяжелые веса и по долгу ходить в горку на беговой дорожке!</p>
-        </article>
+            <div class="gallery__item">
+              <img
+                src="photo_9.jpg"
+                loading="lazy"
+                alt="Фото 6"
+                class="gallery__image"
+              />
+            </div>
+            <div class="gallery__item">
+              <img
+                src="photo_2.jpg"
+                loading="lazy"
+                alt="Фото 7"
+                class="gallery__image"
+              />
+            </div>
+            <div class="gallery__item">
+              <img
+                src="photo_3.jpg"
+                loading="lazy"
+                alt="Фото 8"
+                class="gallery__image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <article class="reviews__card">
+      <section class="reviews">
+        <h2 class="reviews__title">
+          <span class="stars">✨</span>Что говорят эксперты<span class="stars"
+            >✨</span
+          >
+        </h2>
+
+        <div class="reviews__container">
+          <article class="reviews__card">
             <div class="reviews__header">
-                <div class="reviews__avatar reviews__avatar--andrey">А</div>
-                <h4 class="reviews__author">Андрей</h4>
+              <div class="reviews__avatar reviews__avatar--nasty">Н</div>
+              <h4 class="reviews__author">Настя</h4>
             </div>
-            <p class="reviews__text">Когда я увидел разработанный учебный дизайн Анютки, я чуть от зависти не подавился. Такой талантливый дизайнер, ее ждет огромное будущее!</p>
-        </article>
-    </div>
-</section>
-<footer class="footer">
-    <h2 class="header__title">Happy Birthday Anny!</h2>
-    <p class="footer__text">С любовью, Алина!</p>
-</footer>
-               
+            <p class="reviews__text">
+              Я с удовольствием кушала йогурты от Ани, они были очень вкусные и
+              натуральные. Аня, красотка! Никогда не опускай руки!
+            </p>
+          </article>
+
+          <article class="reviews__card">
+            <div class="reviews__header">
+              <div class="reviews__avatar reviews__avatar--mahmud">М</div>
+              <h4 class="reviews__author">Махмуд</h4>
+            </div>
+            <p class="reviews__text">
+              Крутая спортсменка! Я увидел ее в спортзале и она вдохновила меня
+              брать более тяжелые веса и по долгу ходить в горку на беговой
+              дорожке!
+            </p>
+          </article>
+
+          <article class="reviews__card">
+            <div class="reviews__header">
+              <div class="reviews__avatar reviews__avatar--andrey">А</div>
+              <h4 class="reviews__author">Андрей</h4>
+            </div>
+            <p class="reviews__text">
+              Когда я увидел разработанный учебный дизайн Анютки, я чуть от
+              зависти не подавился. Такой талантливый дизайнер, ее ждет огромное
+              будущее!
+            </p>
+          </article>
+        </div>
+      </section>
+      <footer class="footer">
+        <h2 class="header__title">С Днём Рождения, Анютка!</h2>
+        <p class="footer__text">С любовью, Алина! 💙</p>
+      </footer>
     </main>
-<script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js"></script>
-    
+    <script src="dialog.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js"></script>
     <script src="fireworks-bg.js"></script>
-  
-</body>
+
+  </body>
 </html>
