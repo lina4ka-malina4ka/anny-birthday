@@ -15,16 +15,17 @@ p {
   padding: 0;
 
   max-inline-size: 1200px;
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
   background: linear-gradient(135deg, #fbdd92 0%, #f8b500 100%);
-
   min-height: 100vh;
   color: #333;
   flex-direction: column;
 }
 
-.about__item, .reviews__text, .footer__text {
-    font-family: 'Nunito', sans-serif; /* Для мелкого текста */
+.about__item,
+.reviews__text,
+.footer__text {
+  font-family: "Nunito", sans-serif; /* Для мелкого текста */
 }
 
 /* НОВОЕ: Стили для контейнера салюта */
@@ -43,78 +44,82 @@ p {
 
 /* Блок модального окна */
 .birthday-modal {
-    border: none;
-    border-radius: 25px;
-    padding: 0;
-    max-width: 500px;
-    width: 90%;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
-    overflow: visible; /* Чтобы крестик мог немного вылезать за края */
+  border: none;
+  border-radius: 25px;
+  padding: 0;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  overflow: visible; /* Чтобы крестик мог немного вылезать за края */
 }
 
 /* Фон за модальным окном */
 .birthday-modal::backdrop {
-    background: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(8px); /* Размываем салюты и основной фон */
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px); /* Размываем салюты и основной фон */
 }
 
 .birthday-modal__content {
-    position: relative;
-    padding: 40px 30px;
-    background: #fff;
-    text-align: center;
-    border-radius: 25px;
+  position: relative;
+  padding: 40px 30px;
+  background: #fff;
+  text-align: center;
+  border-radius: 25px;
 }
 
 .birthday-modal__close {
-    position: absolute;
-    top: -15px;
-    right: -15px;
-    width: 40px;
-    height: 40px;
-    background: #eb0bd9; /* Твой фирменный розовый цвет */
-    border: 3px solid #fff;
-    border-radius: 50%;
-    color: #fff;
-    font-size: 24px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.2s ease;
-    z-index: 10;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 40px;
+  height: 40px;
+  background: #eb0bd9; /* Твой фирменный розовый цвет */
+  border: 3px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease;
+  z-index: 10;
 }
 
 .birthday-modal__close:hover {
-    transform: scale(1.1);
-    background: #f8b500; /* Золотой при наведении */
+  transform: scale(1.1);
+  background: #f8b500; /* Золотой при наведении */
 }
 
 .birthday-modal__image-wrapper {
-    margin-bottom: 20px;
-    border-radius: 15px;
-    overflow: hidden;
-    border: 4px solid #f8b500; /* Золотая рамка */
+  margin-bottom: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 4px solid #f8b500; /* Золотая рамка */
 }
 
 .birthday-modal__img {
-    width: 100%;
-    display: block;
+  width: 100%;
+  display: block;
 }
 
 .birthday-modal__title {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    background-image: linear-gradient(135deg, #9d5ae8 0%, #8e029d 100%); /* Твой фиолетовый градиент */
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  background-image: linear-gradient(
+    135deg,
+    #9d5ae8 0%,
+    #8e029d 100%
+  ); /* Твой фиолетовый градиент */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .birthday-modal__text {
-    font-size: 1.1rem;
-    line-height: 1.5;
-    color: #555;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #555;
 }
 
 .container {
@@ -163,7 +168,6 @@ p {
 }
 
 .hero {
-  
   padding: 30px;
   background-color: rgb(255, 255, 255, 0.5);
   display: flex;
@@ -179,18 +183,18 @@ p {
 }
 
 @keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero_text {
-    animation: fadeInUp 1s ease-out forwards;
+  animation: fadeInUp 1s ease-out forwards;
 }
 
 .title {
@@ -213,11 +217,11 @@ p {
   border-radius: 15px;
   border: 3px solid #eb0bd9;
   box-shadow: 0 10px 30px rgba(235, 11, 217, 0.3); /* Тень в цвет рамки */
-    transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
 }
 
 .hero__photo:hover {
-    transform: scale(1.03) rotate(2deg); /* Легкий интерактив при наведении */
+  transform: scale(1.03) rotate(2deg); /* Легкий интерактив при наведении */
 }
 
 /* об ане */
@@ -504,10 +508,19 @@ p {
 }
 
 .footer__text {
-font-size: clamp(1.25rem, 1.0795rem + 0.7273vw, 1.625rem);
+  font-size: clamp(1.25rem, 1.0795rem + 0.7273vw, 1.625rem);
   margin-block-start: 10px;
 
   color: #ffffff;
+}
+
+.footer__copyright {
+  text-align: left;
+  margin-top: 15px;
+  font-size: 0.95rem; /* Делаем текст поменьше */
+  color: rgba(255, 255, 255, 0.7); /* Делаем белый цвет полупрозрачным */
+  font-family: "Nunito", sans-serif; /* Если ты добавила этот мягкий шрифт */
+  letter-spacing: 0.5px;
 }
 
 /* Адаптивность для мобилок */

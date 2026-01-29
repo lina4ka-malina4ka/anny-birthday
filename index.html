@@ -2,23 +2,39 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Nunito:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-   <title>Happy Birthday Anny!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Nunito:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Happy Birthday Anny!</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="page">
     <div class="fireworks-bg"></div>
     <dialog class="birthday-modal" id="startModal">
-    <div class="birthday-modal__content">
-        <button class="birthday-modal__close" id="closeModalBtn" aria-label="Закрыть">&times;</button>
+      <div class="birthday-modal__content">
+        <button
+          class="birthday-modal__close"
+          id="closeModalBtn"
+          aria-label="Закрыть"
+        >
+          &times;
+        </button>
         <div class="birthday-modal__image-wrapper">
-            <img src="./cake.jpg" alt="С Днем Рождения!" class="birthday-modal__img">
+          <img
+            src="./cake.jpg"
+            alt="С Днем Рождения!"
+            class="birthday-modal__img"
+          />
         </div>
         <h2 class="birthday-modal__title">С Днём Рождения, Анютка!</h2>
-        <p class="birthday-modal__text">Я приготовила для тебя кое-что особенное. Нажми на крестик, чтобы начать путешествие по твоей личной страничке!</p>
-    </div>
-</dialog>
+        <p class="birthday-modal__text">
+          Я приготовила для тебя кое-что особенное. Нажми на крестик, чтобы
+          начать путешествие по твоей личной страничке!
+        </p>
+      </div>
+    </dialog>
     <header class="header container">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -145,7 +161,9 @@
           />
         </g>
       </svg>
-      <h1 class="header__title">С Днём Рождения, Анютка!<br />31 января 2004</h1>
+      <h1 class="header__title">
+        С Днём Рождения, Анютка!<br />31 января 2004
+      </h1>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="icon_2"
@@ -498,11 +516,13 @@
       <footer class="footer">
         <h2 class="header__title">С Днём Рождения, Анютка!</h2>
         <p class="footer__text">С любовью, Алина! 💙</p>
+        <p class="footer__copyright">
+          &copy; 2026 WEB-LAB.UZ. Все права защищены.
+        </p>
       </footer>
     </main>
     <script src="dialog.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js"></script>
     <script src="fireworks-bg.js"></script>
-
   </body>
 </html>
